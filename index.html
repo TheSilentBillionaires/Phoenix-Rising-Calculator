@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phoenix Rising Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Phoenix Rising Revenue Calculator</h2>
+
+    <!-- Two-column input rows -->
+    <form id="calculator">
+      <div class="input-row">
+        <label>Influencers:<input type="number" id="influencers" value="1" /></label>
+        <label>Webinars/Day:<input type="number" id="webinarsPerDay" value="2" /></label>
+      </div>
+
+      <div class="input-row">
+        <label>Days/Month:<input type="number" id="daysPerMonth" value="30" /></label>
+        <label>Attendees/Webinar:<input type="number" id="attendeesPerWebinar" value="25" /></label>
+      </div>
+
+      <div class="input-row">
+        <label>Conversion Rate (%):<input type="number" id="conversionRate" value="1.5" /></label>
+        <label>Phase 1 Price ($):<input type="number" id="phase1Price" value="7500" /></label>
+      </div>
+
+      <div class="input-row">
+        <label>Phase 2 Price ($):<input type="number" id="phase2Price" value="15000" /></label>
+        <label>Phase 1 % Clients:<input type="number" id="phase1Share" value="50" /></label>
+      </div>
+
+      <div class="input-row">
+        <label>Phase 2 % Clients:<input type="number" id="phase2Share" value="50" /></label>
+      </div>
+
+      <button type="button" onclick="calculateRevenue()">Calculate</button>
+    </form>
+
+    <pre id="output"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
